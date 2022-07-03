@@ -1,14 +1,13 @@
 
 import './App.css';
 import NavBar from './components/NavBar';
+import ListContainer from './components/ListContainer';
 function App() {
   return (
     <div className="App">
     <NavBar/>
-      <header className="App-header">
+    <ListContainer  text={"Hola mundo"}/>
      
-        
-      </header>
     </div>
   );
 }

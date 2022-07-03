@@ -1,15 +1,18 @@
+import React from "react";
+import CartWidget from "./CartWidget";
+
 const NavBar = () =>{
 
     return  <div>
 
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Menu</a>
+    <a className="navbar-brand " href="#">Menu</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+      <ul className="navbar-nav imgJett">
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
@@ -17,17 +20,21 @@ const NavBar = () =>{
           <a className="nav-link" href="#">Productos</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
+          <a className="nav-link" href="#">Local</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
+        <li className="nav-item px-1">  
+        <CartWidget count={7}/>
+      
         </li>
+        
+       
       </ul>
     </div>
   </div>
 </nav>
 
     </div>
+    
 }
 
 export  default NavBar ;
